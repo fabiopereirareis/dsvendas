@@ -1,0 +1,8 @@
+extenções visual studio code:
+Color Highlight
+ESLint
+JSX HTML <tags/>
+Markdown Preview Github Styling
+Remote - WSL
+Visual Studio Intellicode
+
