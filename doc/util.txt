@@ -5,4 +5,7 @@ JSX HTML <tags/>
 Markdown Preview Github Styling
 Remote - WSL
 Visual Studio Intellicode
+app para graficos : apexcharts
+iniciar projeto :  yarn start
+
 
