@@ -11,4 +11,16 @@ netlify vinculado com git
 endereço: https://dsvendas-fabio.netlify.app/
 classe de configuração do spring security
 
+arquivo sql com comandos iniciais / resources/import.sql
+
+relacionamento das tabelas
+@ManyToOne
+    @JoinColumn(name = "seller_id")
+    private Seller seller;
+
+@OneToMany(mappedBy = "seller")// nome do atributo relacionado
+    private List<Sale> sales = new ArrayList<>();
+
+perfil de teste no application.properties
+spring.profiles.active=test
 
