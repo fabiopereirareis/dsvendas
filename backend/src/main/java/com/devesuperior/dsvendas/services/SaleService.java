@@ -1,6 +1,8 @@
 package com.devesuperior.dsvendas.services;
 
 import com.devesuperior.dsvendas.dto.SaleDTO;
+import com.devesuperior.dsvendas.dto.SaleSuccessDTO;
+import com.devesuperior.dsvendas.dto.SaleSumDTO;
 import com.devesuperior.dsvendas.dto.SellerDTO;
 import com.devesuperior.dsvendas.entities.Sale;
 import com.devesuperior.dsvendas.entities.Seller;
@@ -30,4 +32,15 @@ public class SaleService {
         Page<Sale> result = saleRepository.findAll(pageable);
         return result.map(x -> new SaleDTO(x));
     }
+
+    @Transactional(readOnly = true)
+    public List<SaleSumDTO> amountGroupedBySeller(){
+        return saleRepository.amountGroupedBySeller();
+    }
+
+    @Transactional(readOnly = true)
+    public List<SaleSuccessDTO> successGroupedBySeller(){
+        return saleRepository.successGroupedBySeller();
+    }
+
 }
