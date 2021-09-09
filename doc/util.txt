@@ -15,7 +15,7 @@ arquivo sql com comandos iniciais / resources/import.sql
 
 relacionamento das tabelas
 @ManyToOne
-    @JoinColumn(name = "seller_id")
+    @JoinColumn(name = "seller_id")// nome usado para identificar o parâmetro de relação
     private Seller seller;
 
 @OneToMany(mappedBy = "seller")// nome do atributo relacionado
@@ -23,4 +23,16 @@ relacionamento das tabelas
 
 perfil de teste no application.properties
 spring.profiles.active=test
+
+método de conversão de entidade e objeto DTO com função Lambda e streamer JAVA
+public List<SellerDTO> findAll(){
+        List<Seller> result = sellerRepository.findAll();
+        return result.stream().map(x -> new SellerDTO(x)).collect(Collectors.toList());
+    }
+
+criação de varialvel no postman
+file > new > evironment
+entrar com o caminho do servidor
+na requisição usar {{nome da variavel}}/end-point
+ex: {{host}}/sellers
 
