@@ -54,4 +54,20 @@ postgresql
 problema vizualizar tabelas dbeaver 
 https://stackoverflow.com/questions/54235029/dbeaver-can-only-see-default-postgresql-database-in-connection
 
+instalação e config:
+https://github.com/malnvenshorn/OctoPrint-FilamentManager/wiki/Setup-PostgreSQL-on-Arch-Linux
 
+daos do banco no heroku
+postgres://
+obylhcptgicskt
+:
+07cb24345a5e4a1bf09317743472056da1e52c5328b221a3cb5c1bc54fee48f9
+@
+ec2-18-209-153-180.compute-1.amazonaws.com
+:
+5432
+/
+d2pd738c85vqph
+
+endereço do backend no heroku
+https://devsuperior-dsvendas.herokuapp.com/
