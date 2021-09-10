@@ -16,8 +16,8 @@ function DonutChart() {
     const [chartData, setChartData] = useState<ChartData>({ labels: [], series: [] });
 
     useEffect(() => {
-        axios.get(`https://devsuperior-dsvendas.herokuapp.com/sales/amount-by-seller`) // usando axios com o endereço da api teste remoto
-            // axios.get(`${BASE_URL}/sales/amount-by-seller`) // usando axios com o endereço da api
+        // axios.get(`https://devsuperior-dsvendas.herokuapp.com/sales/amount-by-seller`) // usando axios com o endereço da api teste remoto
+            axios.get(`${BASE_URL}/sales/amount-by-seller`) // usando axios com o endereço da api
             .then(response => {
                 const data = response.data as SaleSum[];
                 const myLabels = data.map(x => x.sellerName); // adicionado do jeito certo

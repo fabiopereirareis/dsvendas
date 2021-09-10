@@ -87,3 +87,6 @@ EsseTextoEPascalCase
 Instalar date-fns ao projeto ( formatação de data)
 yarn add date-fns
 
+usar na variável de ambiente do netfile o nome:
+REACT_APP_BACKEND_URL para app react
+

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Chart from 'react-apexcharts';
 import { SaleSuccess } from 'types/sale';
 import { round } from 'utils/format';
+import { BASE_URL } from 'utils/requests';
 
 type SeriesData = {
     name: string;
@@ -32,8 +33,8 @@ function BarChart() {
     });
 
     useEffect(() => {
-        axios.get(`https://devsuperior-dsvendas.herokuapp.com/sales/success-by-seller`) // usando axios com o endereço da api teste remoto
-            // axios.get(`${BASE_URL}/sales/success-by-seller`) // usando axios com o endereço da api
+        // axios.get(`https://devsuperior-dsvendas.herokuapp.com/sales/success-by-seller`) // usando axios com o endereço da api teste remoto
+            axios.get(`${BASE_URL}/sales/success-by-seller`) // usando axios com o endereço da api
             .then(response => {
                 const data = response.data as SaleSuccess[];
                 const myLabels = data.map(x => x.sellerName); // adicionado do jeito certo
