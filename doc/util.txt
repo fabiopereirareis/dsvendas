@@ -71,3 +71,16 @@ d2pd738c85vqph
 
 endereço do backend no heroku
 https://devsuperior-dsvendas.herokuapp.com/
+
+rotas (links)
+framework para rotas do react
+yarn add react-router-dom
+yarn add @types/react-router-dom -D
+
+conexão com app backend
+yarn add axios
+fazer requisições
+
+Pascal case
+EsseTextoEPascalCase
+
