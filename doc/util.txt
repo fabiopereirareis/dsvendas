@@ -84,3 +84,6 @@ fazer requisições
 Pascal case
 EsseTextoEPascalCase
 
+Instalar date-fns ao projeto ( formatação de data)
+yarn add date-fns
+
