@@ -1,6 +1,6 @@
 ## Projeto desenvolvido na semana DevSuperior com professor Nelio Alves
 
-### Sistema que mostra as vendas  de acordo com o vendedor desenvolvida em API REST com Spring Boot(back-end) e React (front-end)
+### Sistema de visualização de vendas agrupadas por  vendedor, desenvolvida em API REST com Spring Boot(back-end) e React (front-end)
 
 Esse  é um pequeno projeto que integra uma api back-end e uma inteface front-end ambas rodando em servidores web diferentes.
 
